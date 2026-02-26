@@ -6,7 +6,7 @@
 #    By: csamundi <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/02/11 20:54:48 by csamundi          #+#    #+#              #
-#    Updated: 2026/02/11 20:56:00 by csamundi         ###   ########.fr        #
+#    Updated: 2026/02/26 08:49:37 by csamundi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,10 @@ FLAGS = -Wall -Wextra -Werror -std=c++98
 FILES = Base.cpp \
 	main.cpp
 
-HEADERS = Base.hpp
+HEADERS = Base.hpp \
+		  A.hpp \
+		  B.hpp \
+		  C.hpp \
 
 OBJS = $(FILES:.cpp=.o)
 

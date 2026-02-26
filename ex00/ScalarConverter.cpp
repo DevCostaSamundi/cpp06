@@ -6,7 +6,7 @@
 /*   By: csamundi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/25 23:46:20 by csamundi          #+#    #+#             */
-/*   Updated: 2026/02/25 23:46:23 by csamundi         ###   ########.fr       */
+/*   Updated: 2026/02/26 08:26:55 by csamundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 #include <cmath>
 
 ScalarConverter::ScalarConverter() {
-	std::cout << "Construtor padrão foi chamado" std::endl;
+	std::cout << "Construtor padrão foi chamado" << std::endl;
 }
 
 ScalarConverter::ScalarConverter(const ScalarConverter& other) {
@@ -26,7 +26,7 @@ ScalarConverter::ScalarConverter(const ScalarConverter& other) {
 	(void)other;
 }
 
-ScalarConverter& ScalarConverter::operator=(const Serializer& other) {
+ScalarConverter& ScalarConverter::operator=(const ScalarConverter& other) {
 	std::cout << "Construtor de atribuição foi chamado" << std::endl;
 	(void)other;
 	return *this;
