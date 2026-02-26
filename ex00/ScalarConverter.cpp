@@ -17,20 +17,24 @@
 #include <cctype>
 #include <cmath>
 
-
-
-ScalarConverter::ScalarConverter() {}
+ScalarConverter::ScalarConverter() {
+	std::cout << "Construtor padrão foi chamado" std::endl;
+}
 
 ScalarConverter::ScalarConverter(const ScalarConverter& other) {
+	std::cout << "Construtor de Cópia foi chamado" << std::endl;
 	(void)other;
 }
 
 ScalarConverter& ScalarConverter::operator=(const Serializer& other) {
+	std::cout << "Construtor de atribuição foi chamado" << std::endl;
 	(void)other;
 	return *this;
 }
 
-ScalarConverter::~ScalarConverter() {}
+ScalarConverter::~ScalarConverter() {
+	std::cout << "Destrutor foi chamado" << std::endl;
+}
 
 static bool isCharLiteral(const std::string &s) {
     return s.length() == 3 && s[0] == '\'' && s[2] == '\'';

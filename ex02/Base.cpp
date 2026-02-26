@@ -15,6 +15,11 @@
 #include <ctime>
 #include <iostream>
 
+std::cout << "Construtor padrão foi chamado" std::endl;
+std::cout << "Construtor de Cópia foi chamado" << std::endl;
+std::cout << "Construtor de atribuição foi chamado" << std::endl;
+std::cout << "Destrutor foi chamado" << std::endl;
+
 Base::~Base() {}
 
 Base* generate(void) {
