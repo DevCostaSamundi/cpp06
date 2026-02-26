@@ -6,21 +6,22 @@
 /*   By: csamundi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 20:31:46 by csamundi          #+#    #+#             */
-/*   Updated: 2026/02/11 20:56:55 by csamundi         ###   ########.fr       */
+/*   Updated: 2026/02/26 08:47:01 by csamundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Base.hpp"
+#include "A.hpp"
+#include "B.hpp"
+#include "C.hpp"
+
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
 
-std::cout << "Construtor padrão foi chamado" std::endl;
-std::cout << "Construtor de Cópia foi chamado" << std::endl;
-std::cout << "Construtor de atribuição foi chamado" << std::endl;
-std::cout << "Destrutor foi chamado" << std::endl;
-
-Base::~Base() {}
+Base::~Base() {
+	std::cout << "Destrutor foi chamado" << std::endl;
+}
 
 Base* generate(void) {
 	std::srand(std::time(NULL));

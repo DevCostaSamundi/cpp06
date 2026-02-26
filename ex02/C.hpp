@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Base.hpp                                           :+:      :+:    :+:   */
+/*   C.hpp                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: csamundi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/11 20:27:19 by csamundi          #+#    #+#             */
-/*   Updated: 2026/02/26 08:45:47 by csamundi         ###   ########.fr       */
+/*   Created: 2026/02/26 08:38:19 by csamundi          #+#    #+#             */
+/*   Updated: 2026/02/26 08:44:29 by csamundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef	BASE_HPP
-#define BASE_HPP
+#ifndef C_HPP
+#define C_HPP
 
-class Base {
-	public :
-		virtual ~Base();
-};
+#include "Base.hpp"
 
-Base* generate(void);
-void identify(Base* p);
-void identify(Base& p);
+class C : public Base {};
 
 #endif
